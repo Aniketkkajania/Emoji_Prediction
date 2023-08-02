@@ -14,6 +14,9 @@ To use the Emoji Prediction Model with LSTM, follow these steps:
 ## Dataset
 The training data used for this project is provided in the repository. The Comment-Emoji Dataset.csv file contains the TEXT and its corresponding label, here label is denoting a particular emoji type. to check which label denotes to which emoji checkout the emoji-mapping.csv file.
 
+## Tokenization and Padding
+Before training the LSTM model, the text data is tokenized, converting each word into a unique integer representation. Additionally, sequences are padded to ensure they have the same length, as LSTMs require fixed-length sequences. This process is performed in the notebook EmojiPrediction.ipynb before training the model.
+
 ## Model Architecture
 The emoji prediction model is built using LSTM neural networks. LSTM is chosen for its ability to handle sequential data effectively. The details of the LSTM model architecture can be found in the EmojiPrediction.ipynb notebook.
 
